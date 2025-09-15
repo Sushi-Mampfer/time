@@ -11,8 +11,6 @@ async fn main() {
     use leptos_axum::{generate_route_list, LeptosRoutes};
     use std::env;
 
-    console_error_panic_hook::set_once();
-
     let conf = get_configuration(None).unwrap();
     let leptos_options = conf.leptos_options;
     let routes = generate_route_list(App);
